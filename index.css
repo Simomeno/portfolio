@@ -1,0 +1,586 @@
+.griglia {
+    position: fixed;
+    top: 0;          
+    left: 0;         
+    width: 100vw;   
+    height: 100vh;   
+    z-index: -1;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; 
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .elemento {
+    background-color:blue;
+    opacity: 10%;
+  }
+
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('Assets/Fonts/SuisseIntl-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    /*height: 100vh;
+    display: flex;*/
+    flex-direction: column;
+    margin: 0 0;
+    font-family: 'SuisseIntl', Arial, sans-serif;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar{
+    margin-top: 10px;
+    /*justify-content: space-between;*/
+    display: grid;
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.n2{
+    grid-column: 3; 
+}
+
+.n3{
+    grid-column: 5; 
+
+}
+
+.n4{
+    grid-column: 7; 
+
+}
+
+.n5{
+    grid-column: 9; 
+
+}
+
+.n6{
+    grid-column: 11; 
+
+}
+
+#about{
+    margin-top: 4%;
+    display: grid;
+}
+
+#box-text-1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#box-text-2{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.grey{
+    margin: 0px;
+    margin-bottom: 5px;
+    color: #999999;
+}
+
+h2{
+    margin: 0;
+    font-size: 34px;
+}
+
+#info{
+    mix-blend-mode: difference;
+    margin-top: 5%;
+    position: sticky;
+    top: 0px; /* Si ferma esattamente al margine superiore */
+    z-index: 100; /* Assicura che il titolo rimanga sempre in primo piano rispetto alle immagini */
+    padding: 10px 0;
+}
+
+.title{
+    color: white; 
+
+    display: grid;
+    /*justify-content: space-between;*/
+}
+
+.description{
+    margin-top: 5px;
+    color: #666666;
+}
+
+.p1{
+    display: flex;
+    flex-direction: column;
+}
+
+.project1-1{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; /* Sostituisce i margin-left che avevi messo a mano */
+    margin-top: 10px;
+}
+
+#img1{
+    grid-column: span 2; 
+    background-image: url(Assets/Images/Soema/Soema_mag_webp/SOEMA_\ \(50\)_12_11zon.webp);
+    height: 35vh;
+    background-position: 26% center;
+    background-size: cover;
+}
+
+#group1, #group1-1 { 
+    grid-column: span 4;
+    position: relative;
+    height: 70vh;
+
+}
+
+#img2 {
+    position: relative; 
+    width: 100%; 
+    height: 45vh;
+    background-image: url('Assets/Images/Soema/Teaser_finale_compresso2.mp4'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+.rectangle1 {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 70vh;
+    background-color: #DCDCDC;
+    z-index: 1; 
+}
+
+#img3{
+    grid-column: span 3;
+    background-image: url(Assets/Images/Soema/webp2/11zon_260203-00014.webp);
+    height: 53vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.project1-2{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+#group2{
+    grid-column: span 7;
+    align-items: center;
+    position: relative;
+    height: 120vh;
+    display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#group2-1{
+    grid-column: span 7;
+    align-items: center;
+    position: relative;
+    height: 120vh;
+    display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
+    flex-direction: row;
+}
+
+.rectangle2 {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 120vh;
+    background-color: #DCDCDC;
+    z-index: 1; 
+}
+
+#img4 {
+    margin: 2% 1% 2% 2%;
+    position: relative; 
+    width: 47%; 
+    height: 80vh;
+    background-image: url('Assets/Images/Soema/Soema_mag_webp/SOEMA_\ \(43\)_11_11zon.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+#img5 {
+    margin: 2% 2% 2% 1%;
+    position: relative; 
+    width: 47%; 
+    height: 80vh;
+    background-image: url('Assets/Images/Soema/Sensori\ -\ 07-04\ \(19\)_11zon.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+#img6 {
+    grid-column: span 5;
+    background-image: url(Assets/Images/Soema/Screenshot\ 2026-04-28\ alle\ 15.12.44_11zon.webp);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/*FINE PROGETTO 1*/
+
+/* Applica la stessa griglia a tutte le sezioni principali */
+#navbar, #about, .title {
+    grid-template-columns: repeat(12, 1fr); /* Crea 12 colonne uguali */
+    gap: 10px; /* Sostituisci con lo spazio che vuoi tra le colonne */
+}
+
+#testo {
+    grid-column: 3 / 13; /* Inizia ESATTAMENTE dove inizia n2 (colonna 3) e prende il resto dello spazio */
+    line-height: 1.1;
+}
+
+.info2{
+    color: white; 
+    mix-blend-mode: difference;
+    margin-top: 3%;
+    position: sticky;
+    top: 0px; /* Si ferma esattamente al margine superiore */
+    z-index: 100; /* Assicura che il titolo rimanga sempre in primo piano rispetto alle immagini */
+    padding: 10px 0;
+    
+}
+
+#img7{
+    grid-column: span 4; 
+    background-image: url(Assets/Images/CiviCare/framebird-converted/Lab_2-2.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img8 {
+    position: relative; 
+    width: 100%; 
+    height: 45vh;
+    background-image: url('Assets/Images/CiviCare/framebird-converted/Lab_07-04-4-Edit-2.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+#group4 { 
+    grid-column: span 4;
+    position: relative;
+    height: 70vh;
+
+}
+
+#img9{
+    grid-column: span 4;
+    background-image: url(Assets/Images/CiviCare/framebird-converted/Percorso\ 02-03\ 2026-14-2.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img10 {
+    margin: 2% 1% 2% 2%;
+    position: relative; 
+    width: 47%; 
+    height: 30vh;
+    background-image: url(Assets/Images/CiviCare/framebird-converted/corretta-3.webp); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+#img11 {
+    margin: 2% 2% 2% 1%;
+    position: relative; 
+    width: 47%; 
+    height: 30vh;
+    background-image: url(Assets/Images/CiviCare/framebird-converted/scatole.webp); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+#group3{
+    grid-column: span 3;
+    align-items: center;
+    position: relative;
+    height: 53vh;
+    display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#rectangle3 {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 53vh;
+    background-color: #DCDCDC;
+    z-index: 1; 
+}
+
+#img12 {
+    grid-column: span 4;
+    background-image: url(Assets/Images/CiviCare/framebird-converted/4c6f44e1-f2ec-4d88-9502-45e83c59947e-2.webp);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/*FINE PROGETTO 2*/
+
+
+.fade-on-scroll {
+    /* Rende il fade out gestito da JS più morbido ai refresh del frame */
+    transition: opacity 0.1s ease-out; 
+    /* Assicura che la transizione parta in modo pulito */
+    will-change: opacity; 
+}
+
+/* terzo progetto*/
+
+#img13{
+    grid-column: span 2; 
+    background-image: url(Assets/Images/MPT/2/11zon_grigio.webp);
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img14 {
+    margin: 2% 1% 2% 2%;
+    position: relative; 
+    width: 47%; 
+    height: 80vh;
+    background-image: url('Assets/Images/MPT/2/11zon_mobile2.webp');
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+#img15 {
+    margin: 2% 2% 2% 1%;
+    position: relative; 
+    width: 47%; 
+    height: 80vh;
+    background-image: url('Assets/Images/MPT/2/11zon_mpt_mobile_muropsd.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+#group5{
+    grid-column: span 3;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+    display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#rectangle5{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 50vh;
+    background-color: #DCDCDC;
+    z-index: 1; 
+}
+
+#img16 {
+    position: relative; 
+    width: 100%; 
+    height: 100%;
+    background-image: url(Assets/Images/MPT/2/11zon_2.webp); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+
+/* =========================================
+   MEDIA QUERY IPAD / TABLET (fino a 1024px)
+   ========================================= */
+   @media (max-width: 1024px) {
+    /* Testo e bio */
+    h2 { font-size: 26px; }
+    #testo { grid-column: 4 / 13; }
+
+    /* --- PROGETTO 1 --- */
+    #img1 { grid-column: span 3; height: 30vh; }
+    #img3 { grid-column: span 4; height: 40vh; }
+    
+    #group1, #group1-1 { grid-column: span 5; height: 40vh; }
+    #img2 { height: 30vh; } /* Ridotto dal 45vh originale */
+    .rectangle1 { height: 40vh; }
+    
+    #group2, #group2-1 { grid-column: span 12; height: 50vh; }
+    #img4, #img5, #img14, #img15 { height: 40vh; } /* Prima erano a 80vh e rompevano tutto! */
+    .rectangle2 { height: 50vh; }
+    
+    #img6 { grid-column: span 12; height: 40vh; }
+
+    /* --- PROGETTO 2 --- */
+    #group3 { grid-column: span 12; height: 40vh; }
+    #img10, #img11 { height: 30vh; }
+    #rectangle3 { height: 40vh; }
+    
+    #img7 { grid-column: span 6; height: 40vh; }
+    #group4 { grid-column: span 6; height: 40vh; }
+    #img8 { height: 30vh; }
+    
+    #img9, #img12 { grid-column: span 6; height: 40vh; }
+
+    /* --- PROGETTO 3 --- */
+    #img13 { grid-column: span 12; height: 40vh; }
+    
+    #group5 { grid-column: span 12; height: 40vh; }
+    #img16 { height: 100%; }
+    #rectangle5 { height: 40vh; }
+}
+
+  
+@media (max-width: 768px) {
+    .griglia, 
+    #navbar, 
+    #about, 
+    .title, 
+    .project1-1, 
+    .project1-2 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #navbar {
+        row-gap: 0px; 
+    }
+
+
+    h2{
+        font-size: 20px;
+    }
+    #testo{
+        grid-column: span 6; 
+
+    }
+
+    #sidebar{
+        display: grid; /* Da flex diventa grid */
+        grid-template-columns: repeat(6, 1fr); /* Le diamo 6 colonne interne */
+        gap: 10px; /* Mantieni la stessa spaziatura */
+        /* Per assicurarsi che la sidebar stessa occupi spazio nel layout generale se serve: */
+        grid-column: 1 / -1;
+        margin-bottom: 5%;
+    }
+
+    #left{
+        grid-column: 4 / span 2; 
+        grid-row: 1;
+        
+    }
+    #right{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+
+    }
+
+   .n2, .n1, .n3{
+    grid-column: 1 / span 2; 
+
+   }
+
+   .n4, .n5, .n6{
+    grid-column: 4 / span 2; 
+   }
+
+   .n4{
+    grid-row: 1;
+   }
+   .n5{
+    grid-row: 2;
+   }
+
+   .n6{
+    grid-row: 3;
+   }
+
+
+   #img1, #group1, #group1-1, #group2, #group2-1, #group3, #group4, #img3, #img6, #img7, #img9, #img10, #img12, #img13 {
+    grid-column: 1 / -1;
+   }
+
+  #img6{
+    height: 40vh;
+  }
+
+  #img4, #img5, #img7, #img9, #img14, #img15, #img13{
+    height: 40vh;
+  }
+  #group2{
+    height: 70vh;
+  }
+
+  #group2-1{
+    height: 70vh;
+  }
+ 
+
+  #img12{
+    margin-top: 10px;
+  }
+
+  #group5{
+    grid-column: 1/7;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#group3{
+    margin: 0px;
+}
+
+  .rectangle2{
+    height: 70vh;
+    margin: 0px;
+  }
+
+  #img18{
+    grid-column: span 7;
+    margin-top: 10px;
+  }
+
+  .project1-2{
+   
+    gap: 0px; /* Sostituisce i margin-left che avevi messo a mano */
+   
+}
+}
+
+
+
+    
