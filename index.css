@@ -6,7 +6,7 @@
     height: 100vh;   
     z-index: -1;
     display: grid; 
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 10px; 
     padding: 10px;
     box-sizing: border-box;
@@ -88,6 +88,7 @@ a{
 #box-text-2{
     display: flex;
     flex-direction: column;
+    grid-column: span 2;
 }
 
 p{
@@ -134,7 +135,7 @@ h2{
 
 .project1-1{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 10px; /* Sostituisce i margin-left che avevi messo a mano */
     margin-top: 10px;
 }
@@ -184,7 +185,7 @@ h2{
 
 .project1-2{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 10px; 
     margin-top: 10px;
 }
@@ -251,8 +252,13 @@ h2{
 
 /* Applica la stessa griglia a tutte le sezioni principali */
 #navbar, #about {
-    grid-template-columns: repeat(12, 1fr); /* Crea 12 colonne uguali */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 10px; /* Sostituisci con lo spazio che vuoi tra le colonne */
+}
+
+.title{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0px 10px;
 }
 
 #testo {
@@ -430,7 +436,7 @@ h2{
    @media (max-width: 1024px) {
     /* Testo e bio */
     h2 { font-size: 26px; }
-    #testo { grid-column: 4 / 13; }
+    #testo { grid-column: 3 / 13; }
 
     /* --- PROGETTO 1 --- */
     #img1 { grid-column: span 3; height: 30vh; }
@@ -473,7 +479,7 @@ h2{
     .title, 
     .project1-1, 
     .project1-2 {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, minmax(0, 1fr));
     }
 
     #navbar {
