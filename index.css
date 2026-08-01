@@ -250,7 +250,7 @@ h2{
 /*FINE PROGETTO 1*/
 
 /* Applica la stessa griglia a tutte le sezioni principali */
-#navbar, #about, .title {
+#navbar, #about {
     grid-template-columns: repeat(12, 1fr); /* Crea 12 colonne uguali */
     gap: 10px; /* Sostituisci con lo spazio che vuoi tra le colonne */
 }
