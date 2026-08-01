@@ -447,11 +447,10 @@ h2{
     #img2 { height: 30vh; } /* Ridotto dal 45vh originale */
     .rectangle1 { height: 40vh; }
     
-    #group2, #group2-1 { grid-column: span 12; height: 50vh; }
-    #img4, #img5, #img14, #img15 { height: 40vh; } /* Prima erano a 80vh e rompevano tutto! */
-    .rectangle2 { height: 50vh; }
+    #group2, #group2-1 { grid-column: span 12; height: 120vh;}
+    #img4, #img5, #img14, #img15 { height: 80vh; } /* Prima erano a 80vh e rompevano tutto! */
     
-    #img6 { grid-column: span 12; height: 40vh; }
+    #img6 { grid-column: span 12; height: 70vh; }
 
     /* --- PROGETTO 2 --- */
     #group3 { grid-column: span 12; height: 40vh; }
