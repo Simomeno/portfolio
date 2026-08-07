@@ -127,6 +127,7 @@ h2{
 .description{
     margin-top: 5px;
     color: #666666;
+    text-wrap: pretty;
 }
 
 .p1{
@@ -163,6 +164,8 @@ h2{
     position: relative; 
     z-index: 2;
 }
+
+
 
 .rectangle1 {
     position: absolute;
