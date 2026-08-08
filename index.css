@@ -142,7 +142,7 @@ h2{
     margin-top: 10px;
 }
 
-#img1{
+#img-s1{
     grid-column: span 2; 
     background-image: url(Assets/Images/Soema/1-soema.webp);
     height: 35vh;
@@ -157,15 +157,15 @@ h2{
 
 }
 
-#video-soema {
-    width: 100%; 
-    height: 45vh; 
-    object-fit: cover; 
+#img-s2 {
     position: relative; 
-    z-index: 2;
+    width: 100%; 
+    height: 45vh;
+    background-image: url('Assets/Images/Soema/Teaser_finale_compresso2.mp4'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
 }
-
-
 
 .rectangle1 {
     position: absolute;
@@ -177,7 +177,7 @@ h2{
     z-index: 1; 
 }
 
-#img3{
+#img-s3{
     grid-column: span 3;
     background-image: url(Assets/Images/Soema/3-soema.webp);
     height: 53vh;
@@ -221,7 +221,7 @@ h2{
     z-index: 1; 
 }
 
-#img4 {
+#img-s4 {
     margin: 2% 1% 2% 2%;
     position: relative; 
     width: 47%; 
@@ -231,7 +231,7 @@ h2{
     background-size: cover;
     z-index: 2; 
 }
-#img5 {
+#img-s5 {
     margin: 2% 2% 2% 1%;
     position: relative; 
     width: 47%; 
@@ -242,7 +242,7 @@ h2{
     z-index: 2; 
 }
 
-#img6 {
+#img-s6 {
     grid-column: span 5;
     background-image: url(Assets/Images/Soema/6-soema.webp);
     height: 60vh;
@@ -279,40 +279,7 @@ h2{
     
 }
 
-#img7{
-    grid-column: span 4; 
-    background-image: url(Assets/Images/CiviCare/1-cvc.webp);
-    height: 70vh;
-    background-position: center;
-    background-size: cover;
-}
-
-#img8 {
-    position: relative; 
-    width: 100%; 
-    height: 45vh;
-    background-image: url('Assets/Images/CiviCare/2-cvc.webp'); 
-    background-position: center;
-    background-size: cover;
-    z-index: 2; 
-}
-
-#group4 { 
-    grid-column: span 4;
-    position: relative;
-    height: 70vh;
-
-}
-
-#img9{
-    grid-column: span 4;
-    background-image: url(Assets/Images/CiviCare/3-cvc.webp);
-    height: 70vh;
-    background-position: center;
-    background-size: cover;
-}
-
-#img10 {
+#img-c1 {
     margin: 2% 1% 2% 2%;
     position: relative; 
     width: 47%; 
@@ -322,7 +289,7 @@ h2{
     background-size: cover;
     z-index: 2; 
 }
-#img11 {
+#img-c2 {
     margin: 2% 2% 2% 1%;
     position: relative; 
     width: 47%; 
@@ -352,7 +319,40 @@ h2{
     z-index: 1; 
 }
 
-#img12 {
+#img-c3{
+    grid-column: span 4; 
+    background-image: url(Assets/Images/CiviCare/1-cvc.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-c4 {
+    position: relative; 
+    width: 100%; 
+    height: 45vh;
+    background-image: url('Assets/Images/CiviCare/2-cvc.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+#group4 { 
+    grid-column: span 4;
+    position: relative;
+    height: 70vh;
+
+}
+
+#img-c5{
+    grid-column: span 4;
+    background-image: url(Assets/Images/CiviCare/3-cvc.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-c6 {
     grid-column: span 4;
     background-image: url(Assets/Images/CiviCare/6-cvc.webp);
     height: 60vh;
@@ -361,6 +361,92 @@ h2{
 }
 
 /*FINE PROGETTO 2*/
+
+/*undeclared*/
+
+#img-u1 {
+    margin: 2% 1% 2% 2%;
+    position: relative; 
+    width: 47%; 
+    height: 30vh;
+    background-image: url(Assets/Images/Undeclared/8.webp); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+#img-u2 {
+    margin: 2% 2% 2% 1%;
+    position: relative; 
+    width: 47%; 
+    height: 30vh;
+    background-image: url(Assets/Images/Undeclared/4.webp); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+        #group3{
+            grid-column: span 3;
+            align-items: center;
+            position: relative;
+            height: 53vh;
+            display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        #rectangle3 {
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%; 
+            height: 53vh;
+            background-color: #DCDCDC;
+            z-index: 1; 
+        }
+
+#img-u3{
+    grid-column: span 4; 
+    background-image: url(Assets/Images/Undeclared/2.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-u4 {
+    position: relative; 
+    width: 100%; 
+    height: 45vh;
+    background-image: url('Assets/Images/Undeclared/3.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+        #group4 { 
+            grid-column: span 4;
+            position: relative;
+            height: 70vh;
+
+        }
+
+#img-u5{
+    grid-column: span 4;
+    background-image: url(Assets/Images/Undeclared/6.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-u6 {
+    grid-column: span 4;
+    background-image: url(Assets/Images/Undeclared/5.webp);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* fine undeclared*/
 
 
 .fade-on-scroll {
@@ -372,7 +458,7 @@ h2{
 
 /* terzo progetto*/
 
-#img13{
+#img-m1{
     grid-column: span 2; 
     background-image: url(Assets/Images/MPT/1-mpt.webp);
     height: 35vh;
@@ -380,7 +466,7 @@ h2{
     background-size: cover;
 }
 
-#img14 {
+#img-m2 {
     margin: 2% 1% 2% 2%;
     position: relative; 
     width: 47%; 
@@ -390,7 +476,7 @@ h2{
     background-size: cover;
     z-index: 2; 
 }
-#img15 {
+#img-m3 {
     margin: 2% 2% 2% 1%;
     position: relative; 
     width: 47%; 
@@ -408,7 +494,6 @@ h2{
     height: 50vh;
     display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
     flex-direction: row;
-    margin-bottom: 10px;
 }
 
 #rectangle5{
@@ -421,7 +506,7 @@ h2{
     z-index: 1; 
 }
 
-#img16 {
+#img-m4 {
     position: relative; 
     width: 100%; 
     height: 100%;
@@ -429,6 +514,11 @@ h2{
     background-position: center;
     background-size: cover;
     z-index: 2; 
+}
+
+#rights{
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -441,34 +531,34 @@ h2{
     #testo { grid-column: 3 / 13; }
 
     /* --- PROGETTO 1 --- */
-    #img1 { grid-column: span 3; height: 30vh; }
-    #img3 { grid-column: span 4; height: 40vh; }
+    #img-s1 { grid-column: span 3; height: 30vh; }
+    #img-s3 { grid-column: span 4; height: 40vh; }
     
     #group1, #group1-1 { grid-column: span 5; height: 40vh; }
-    #video-soema { height: 30vh; } /* Ridotto dal 45vh originale */
+    #img-s2 { height: 30vh; } /* Ridotto dal 45vh originale */
     .rectangle1 { height: 40vh; }
     
     #group2, #group2-1 { grid-column: span 12; height: 120vh;}
-    #img4, #img5, #img14, #img15 { height: 80vh; } /* Prima erano a 80vh e rompevano tutto! */
+    #img-s4, #img-s5, #img-m2, #img-m3 { height: 80vh; } /* Prima erano a 80vh e rompevano tutto! */
     
-    #img6 { grid-column: span 12; height: 70vh; }
+    #img-s6 { grid-column: span 12; height: 70vh; }
 
     /* --- PROGETTO 2 --- */
     #group3 { grid-column: span 12; height: 40vh; }
-    #img10, #img11 { height: 30vh; }
+    #img-c1, #img-c2, #img-u1, #img-u2 { height: 30vh; }
     #rectangle3 { height: 40vh; }
     
-    #img7 { grid-column: span 6; height: 40vh; }
+    #img-c3, #img-u3 { grid-column: span 6; height: 40vh; }
     #group4 { grid-column: span 6; height: 40vh; }
-    #img8 { height: 30vh; }
+    #img-c4, #img-u4 { height: 30vh; }
     
-    #img9, #img12 { grid-column: span 6; height: 40vh; }
+    #img-c5, #img-c6, #img-u5, #img-u6 { grid-column: span 6; height: 40vh; }
 
     /* --- PROGETTO 3 --- */
-    #img13 { grid-column: span 12; height: 40vh; }
+    #img-m1 { grid-column: span 12; height: 40vh; }
     
     #group5 { grid-column: span 12; height: 40vh; }
-    #img16 { height: 100%; }
+    #img-m4 { height: 100%; }
     #rectangle5 { height: 40vh; }
 }
 
@@ -517,12 +607,12 @@ h2{
     }
 
    .n2, .n1, .n3{
-    grid-column: 1 / span 2; 
+    grid-column: 1 / span 3; 
 
    }
 
    .n4, .n5, .n6{
-    grid-column: 4 / span 2; 
+    grid-column: 4 / span 3; 
    }
 
    .n4{
@@ -537,17 +627,22 @@ h2{
    }
 
 
-   #img1, #group1, #group1-1, #group2, #group2-1, #group3, #group4, #img3, #img6, #img7, #img9, #img10, #img12, #img13 {
+   #img-s1, #group1, #group1-1, #group2, #group2-1, #group3, #group4, #img-s3, #img-s6, #img-c3, #img-c5, #img-c1, #img-c6, #img-m1, #img-u3, #img-u1, #img-u6 {
     grid-column: 1 / -1;
    }
 
-  #img6{
+  #img-s6{
     height: 40vh;
   }
 
-  #img4, #img5, #img7, #img9, #img14, #img15, #img13{
+  #img-s4, #img-s5, #img-c3, #img-u3, #img-c5, #img-u5, #img-m2, #img-m3{
     height: 40vh;
   }
+
+  #img-m1{
+    height: 50vh;
+  }
+
   #group2{
     height: 70vh;
   }
@@ -557,7 +652,7 @@ h2{
   }
  
 
-  #img12{
+  #img-c6, #img-u6{
     margin-top: 10px;
   }
 
@@ -574,11 +669,6 @@ h2{
   .rectangle2{
     height: 70vh;
     margin: 0px;
-  }
-
-  #img18{
-    grid-column: span 7;
-    margin-top: 10px;
   }
 
   .project1-2{
