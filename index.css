@@ -616,18 +616,7 @@ h2{
 
     #testo { grid-column: 3 / 13; }
 
-    #img-s1{
-        grid-column: span 3;
-    }
-
-    #group1{
-        grid-column: span 5;
-    }
-    #group3, #group-uv2, .rectangle-uv2{
-        height: 120vh; 
-    }
-
-    #rectangle3{
+    #group3, #group-uv2, .rectangle-uv2, #rectangle3{
         height: 120vh; 
     }
 
@@ -639,7 +628,7 @@ h2{
         grid-column: 1 / -1;
     }
 
-    #img-s1, #img-s2, #img-s3, #img-s6, #img-u3, #img-u4, #img-u5, #img-u6, #img-o1, #img-o2, #img-c3, #img-c4, #img-uv1, #img-uv2, #img-uv3, #img-uv6, #img-uv2{
+    #img-s1, #img-s2, #img-s3, #img-s6, #img-u3, #img-u4, #img-u5, #img-u6, #img-o2, #img-c3, #img-c4, #img-uv1, #img-uv2, #img-uv3{
         height: 60vh;
     }
 
@@ -656,8 +645,7 @@ h2{
     }
     
 }
-
-  
+ 
 @media (max-width: 768px) {
     .griglia, #navbar, #about, .title, .project1-1, .project1-2 {
         grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -717,35 +705,18 @@ h2{
         grid-column: 1 / -1;
     }
 
-    #img-c3, #img-c5 {
-        height: 40vh;
-    }
-
-    #img-o3{
-        height: 50vh;
-    }
-
     #group5{
         grid-column: 1/7;
         margin: 0px;
         height: 40vh;
     }
 
-    #rectangle5{
-        height: 40vh;
-    }
-
-    #group3{
-        height: 50vh; 
-        margin: 0px;
-    }
-
-    .rectangle2, .rectangle-uv2, #rectangle3{
+    .rectangle2, .rectangle-uv2, #group3, #rectangle3{
         height: 50vh;
         margin: 0px;
     }
 
-    #group2, #group-uv2, #group2-1{
+    #group2, #group-uv2, #group2-1, #img-o3{
         height: 50vh; 
     }
 
@@ -753,12 +724,8 @@ h2{
         gap: 10px; 
     }
 
-    .rectangle1, .rectangle-uv1, #img-m1, #img-m4{
+    .rectangle1, .rectangle-uv1, #img-m1, #img-m4, #group1, #group-uv1, #group4, #img-c5, #rectangle5 {
         height: 40vh;
-    }
-
-    #group1, #group-uv1, #group4{
-        height: 40vh; 
     }
 
     #img-s1, #img-s2, #img-s3, #img-s6, #img-u3, #img-u4, #img-u5, #img-u6, #img-o1, #img-o2, #img-c3, #img-c4, #img-uv1, #img-uv2, #img-uv3, #img-uv6{
@@ -785,7 +752,6 @@ h2{
         background-size: 150%;
     }
 
-    
 }
 
 
