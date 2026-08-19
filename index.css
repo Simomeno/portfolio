@@ -651,6 +651,7 @@ h2{
 #rights{
     gap: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 
@@ -760,7 +761,6 @@ h2{
     #group5{
         grid-column: 1/7;
         margin: 0px;
-        margin-bottom: 10px;
     }
 
     #group3{
