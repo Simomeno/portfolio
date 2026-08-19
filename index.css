@@ -541,6 +541,112 @@ h2{
     z-index: 2; 
 }
 
+#img-uv1{
+    grid-column: span 4; 
+    background-image: url(Assets/Images/Unverse/6.webp);
+    height: 40vh;
+    background-position: 26% center;
+    background-size: cover;
+}
+
+#group-uv1, #group1-1 { 
+    grid-column: span 4;
+    position: relative;
+    height: 70vh;
+}
+
+#img-uv2 {
+    position: relative; 
+    width: 100%; 
+    height: 50vh;
+    background-image: url('Assets/Images/Unverse/1.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+.rectangle-uv1 {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 70vh;
+    background-color: #DCDCDC;
+    z-index: 1; 
+}
+
+#img-uv3{
+    grid-column: span 4;
+    background-image: url(Assets/Images/Unverse/5.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.project1-2{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+#group-uv2{
+    grid-column: span 5;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#group2-1{
+    grid-column: span 7;
+    align-items: center;
+    position: relative;
+    height: 120vh;
+    display: flex; /* Manteniamo flex QUI per affiancare img4 e img5 internamente */
+    flex-direction: row;
+}
+
+.rectangle-uv2 {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 80vh;
+    background-color: #DCDCDC;
+    z-index: 1; 
+}
+
+#img-uv4 {
+    margin: 2% 1% 2% 2%;
+    position: relative; 
+    width: 47%; 
+    height: 55vh;
+    background-image: url('Assets/Images/Unverse/4.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+#img-uv5 {
+    margin: 2% 2% 2% 1%;
+    position: relative; 
+    width: 47%; 
+    height: 55vh;
+    background-image: url('Assets/Images/Unverse/3.webp'); 
+    background-position: center;
+    background-size: cover;
+    z-index: 2; 
+}
+
+#img-uv6 {
+    grid-column: span 5;
+    background-image: url(Assets/Images/Unverse/2.webp);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
 
 #rights{
     gap: 10px;
@@ -635,11 +741,11 @@ h2{
         grid-row: 3;
     }
 
-    #img-s1, #group1, #group1-1, #group2, #group2-1, #group3, #group4, #img-s3, #img-s6, #img-c3, #img-c5, #img-c1, #img-c6, #img-m1, #img-u3, #img-u1, #img-u6, #img-o1, #img-o2, #img-o3, #img-u5 {
+    #img-s1, #group1, #group-uv1, #group1-1, #group2, #group-uv2, #group2-1, #group3, #group4, #img-s3, #img-s6, #img-c3, #img-c5, #img-c1, #img-c6, #img-m1, #img-u3, #img-u1, #img-u6, #img-o1, #img-o2, #img-o3, #img-u5, #img-uv1, #img-uv2, #img-uv3, #img-uv4, #img-uv5, #img-uv6 {
         grid-column: 1 / -1;
     }
 
-    #img-c3, #img-c5, #img-s6{
+    #img-c3, #img-c5 {
         height: 40vh;
     }
 
@@ -662,12 +768,12 @@ h2{
         margin: 0px;
     }
 
-    .rectangle2, #rectangle3{
+    .rectangle2, .rectangle-uv2, #rectangle3{
         height: 50vh;
         margin: 0px;
     }
 
-    #group2, #group2-1{
+    #group2, #group-uv2, #group2-1{
         height: 50vh; 
     }
 
@@ -675,15 +781,15 @@ h2{
         gap: 0px; 
     }
 
-    .rectangle1, #img-m1, #img-m4{
+    .rectangle1, .rectangle-uv1, #img-m1, #img-m4{
         height: 40vh;
     }
 
-    #group1, #group4{
+    #group1, #group-uv1, #group4{
         height: 40vh; 
     }
 
-    #img-s1, #img-s2, #img-s3, #img-s6, #img-u3, #img-u4, #img-u5, #img-u6, #img-o1, #img-o2, #img-c3, #img-c4{
+    #img-s1, #img-s2, #img-s3, #img-s6, #img-u3, #img-u4, #img-u5, #img-u6, #img-o1, #img-o2, #img-c3, #img-c4, #img-uv1, #img-uv2, #img-uv3, #img-uv6{
         height: 30vh;
     }
 
@@ -695,12 +801,16 @@ h2{
         background-size: 130%;
     }
 
-    #img-s4, #img-s5, #img-u1, #img-u2, #img-c1, #img-c2, #img-m2, #img-m3{
+    #img-s4, #img-s5, #img-u1, #img-u2, #img-c1, #img-c2, #img-m2, #img-m3, #img-uv4, #img-uv5{
         height: 35vh;
     }
 
     #img-c6{
         height: 60vh;
+    }
+
+    #img-uv3{
+        background-size: 150%;
     }
 
     
