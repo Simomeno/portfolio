@@ -102,9 +102,9 @@
         </div>
 
         <div class="project1-1">
-            <div id="img-s1" class="fade-on-scroll"></div>
+            <div id="img-s1"  ></div>
 
-            <div id="group1" class="fade-on-scroll" data-fade-end="150" data-fade-distance="300">
+            <div id="group1">
                 <video id="img-s2" autoplay muted loop playsinline>
                     <source src="Assets/Images/Soema/Teaser_finale_compresso2 10.33.03.webm" type="video/webm">
                     <source src="Assets/Images/Soema/Teaser_finale_compresso2.mp4" type="video/mp4">
@@ -112,7 +112,7 @@
                 <div class="rectangle1"></div>
             </div>
 
-            <div id="img-s3" class="fade-on-scroll" data-fade-end="150" data-fade-distance="200"></div>
+            <div id="img-s3"></div>
         </div>
 
         <div class="project1-2">
@@ -313,12 +313,12 @@
     </div>
 
     <div class="project1-1">
-        <div id="img-uv1" class="fade-on-scroll"></div>
+        <div id="img-uv1"></div>
 
 
-        <div id="img-uv3" class="fade-on-scroll" data-fade-end="150" data-fade-distance="200"></div>
+        <div id="img-uv3"></div>
 
-        <div id="group-uv1" class="fade-on-scroll" data-fade-end="150" data-fade-distance="300">
+        <div id="group-uv1">
             <div id="img-uv2"></div>
             <div class="rectangle-uv1"></div>
         </div> 
@@ -341,25 +341,4 @@
             
 </body>
 </html>
-<!-- 
-<script>
-    window.addEventListener("scroll", () => {
-        const elements = document.querySelectorAll(".fade-on-scroll");
-        
-        elements.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            
-            // Legge i parametri personalizzati dall'HTML. 
-            // Se non ci sono, usa il || (OR) per applicare i valori di default (120 e 100).
-            const fadeEnd = parseFloat(el.getAttribute("data-fade-end")) || 120;
-            const fadeDistance = parseFloat(el.getAttribute("data-fade-distance")) || 100;
-            
-            // Calcolo opacità
-            let opacity = (rect.bottom - fadeEnd) / fadeDistance;
-            
-            // Forza l'opacità a rimanere tra 0 e 1
-            el.style.opacity = Math.min(Math.max(opacity, 0), 1);
-        });
-    });
-</script>
--->
+

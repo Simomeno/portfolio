@@ -428,13 +428,6 @@ video::-webkit-media-controls {
 /* fine undeclared*/
 
 
-.fade-on-scroll {
-    /* Rende il fade out gestito da JS più morbido ai refresh del frame */
-    transition: opacity 0.1s ease-out; 
-    /* Assicura che la transizione parta in modo pulito */
-    will-change: opacity; 
-}
-
 /* MPT*/
 
 #img-m1{
