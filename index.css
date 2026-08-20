@@ -152,15 +152,26 @@ h2{
     height: 70vh;
 }
 
+
+
+
 #img-s2 {
     position: relative; 
     width: 100%; 
     height: 45vh;
-    background-image: url('Assets/Images/Soema/Teaser_finale_compresso2.mp4'); 
-    background-position: center;
-    background-size: cover;
+    object-fit: cover; /* Sostituisce background-size: cover */
+    object-position: center; /* Sostituisce background-position: center */
     z-index: 2; 
 }
+
+/* Aggiungi questa regola per forzare la scomparsa del tasto play e della UI di default sui browser WebKit (Chrome, Safari, Edge) */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+
+
+
 
 .rectangle1 {
     position: absolute;
