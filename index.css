@@ -70,6 +70,12 @@ a{
     grid-column: 11; 
 }
 
+.n7{
+    text-align: right;
+    position: absolute;
+    right: 10px;
+}
+
 #about{
     margin-top: 4%;
     display: grid;
