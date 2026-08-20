@@ -342,26 +342,4 @@
 </body>
 </html>
 
-<script>
-    // Memorizza la larghezza iniziale
-    let larghezzaAttuale = window.innerWidth;
-  
-    function bloccaAltezza() {
-      // Calcola l'1% dell'altezza dello schermo in pixel
-      let vh = window.innerHeight * 0.01;
-      // Crea la variabile CSS --vh
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-  
-    // 1. Calcola l'altezza al primo avvio
-    bloccaAltezza();
-  
-    // 2. Ricalcola solo se l'utente ruota il telefono
-    window.addEventListener('resize', function() {
-      if (window.innerWidth !== larghezzaAttuale) {
-        larghezzaAttuale = window.innerWidth;
-        bloccaAltezza();
-      }
-    });
-  </script>
 

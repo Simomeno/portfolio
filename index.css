@@ -715,52 +715,52 @@ video::-webkit-media-controls {
         grid-column: 1 / -1;
     }
 
-    #group5 {
-    grid-column: 1/7;
-    margin: 0px;
-    height: calc(var(--vh, 1vh) * 40);
-}
+    #group5{
+        grid-column: 1/7;
+        margin: 0px;
+        height: 40vh;
+    }
 
-.rectangle2, .rectangle-uv2, .group3, #rectangle3 {
-    height: calc(var(--vh, 1vh) * 50);
-    margin: 0px;
-}
+    .rectangle2, .rectangle-uv2, .group3, #rectangle3{
+        height: 50vh;
+        margin: 0px;
+    }
 
-#group2, #group-uv2, #group2-1, #img-o3 {
-    height: calc(var(--vh, 1vh) * 50); 
-}
+    #group2, #group-uv2, #group2-1, #img-o3{
+        height: 50vh; 
+    }
 
-.project1-2 {
-    gap: 10px; 
-}
+    .project1-2{
+        gap: 10px; 
+    }
 
-.rectangle1, .rectangle-uv1, #img-m1, #img-m4, #group1, #group-uv1, .group4, #img-c5, #rectangle5 {
-    height: calc(var(--vh, 1vh) * 40);
-}
+    .rectangle1, .rectangle-uv1, #img-m1, #img-m4, #group1, #group-uv1, .group4, #img-c5, #rectangle5 {
+        height: 40vh;
+    }
 
-#img-s1, #img-s2, #img-s3, #img-s6, #img-u3, #img-u4, #img-u5, #img-u6, #img-o1, #img-o2, #img-c3, #img-c4, #img-uv1, #img-uv2, #img-uv3, #img-uv6 {
-    height: calc(var(--vh, 1vh) * 30);
-}
+    #img-s1, #img-s2, #img-s3, #img-s6, #img-u3, #img-u4, #img-u5, #img-u6, #img-o1, #img-o2, #img-c3, #img-c4, #img-uv1, #img-uv2, #img-uv3, #img-uv6{
+        height: 30vh;
+    }
 
-#img-o2 {
-    background-size: 180%;
-}
+    #img-o2{
+        background-size: 180%;
+    }
+    
+    #img-o1{
+        background-size: 130%;
+    }
 
-#img-o1 {
-    background-size: 130%;
-}
+    #img-s4, #img-s5, #img-u1, #img-u2, #img-c1, #img-c2, #img-m2, #img-m3, #img-uv4, #img-uv5{
+        height: 35vh;
+    }
 
-#img-s4, #img-s5, #img-u1, #img-u2, #img-c1, #img-c2, #img-m2, #img-m3, #img-uv4, #img-uv5 {
-    height: calc(var(--vh, 1vh) * 35);
-}
+    #img-c6{
+        height: 60vh;
+    }
 
-#img-c6 {
-    height: calc(var(--vh, 1vh) * 60);
-}
-
-#img-uv3 {
-    background-size: 150%;
-}
+    #img-uv3{
+        background-size: 150%;
+    }
 
 }
 
