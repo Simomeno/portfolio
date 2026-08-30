@@ -358,23 +358,6 @@
 </div>
 
 <p id="rights">© 2026 - All Rights Reserved</p>
-
-<script>
-        function lockViewportHeight() {
-    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
-    }
-
-    // Calcola una sola volta, al caricamento della pagina
-    lockViewportHeight();
-
-    // NON ascoltiamo "resize" (è proprio quello che spara Instagram durante lo scroll)
-    // Ascoltiamo solo il cambio di orientamento reale, con un debounce ampio
-    let orientationTimer;
-    window.addEventListener('orientationchange', () => {
-    clearTimeout(orientationTimer);
-    orientationTimer = setTimeout(lockViewportHeight, 300);
-    });
-</script>
             
 </body>
 </html>
