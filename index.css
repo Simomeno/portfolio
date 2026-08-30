@@ -1,3 +1,7 @@
+img {
+    display: block;
+}
+
 .griglia {
     position: fixed;
     top: 0;          
@@ -20,7 +24,7 @@
 @font-face {
     font-family: 'SuisseIntl';
     src: url('Assets/Fonts/SuisseIntl-SemiBold.ttf') format('truetype');
-    font-weight: 100 900;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -146,10 +150,10 @@ h2{
 
 #img-s1{
     grid-column: span 2; 
-    background-image: url(Assets/Images/Soema/1-soema.webp);
+    width: 100%;
     height: 35vh;
-    background-position: 26% center;
-    background-size: cover;
+    object-position: 26% center;
+    object-fit: cover;
 }
 
 #group1 { 
@@ -191,10 +195,10 @@ video::-webkit-media-controls {
 
 #img-s3{
     grid-column: span 3;
-    background-image: url(Assets/Images/Soema/3-soema.webp);
+    width: 100%;
     height: 53vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 .project1-2{
@@ -238,9 +242,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 80vh;
-    background-image: url('Assets/Images/Soema/4-soema.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 #img-s5 {
@@ -248,18 +251,17 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 80vh;
-    background-image: url('Assets/Images/Soema/5-soema.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
 #img-s6 {
     grid-column: span 5;
-    background-image: url(Assets/Images/Soema/6-soema.webp);
+    width: 100%;
     height: 60vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 /*FINE Soema*/
@@ -296,9 +298,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 30vh;
-    background-image: url(Assets/Images/CiviCare/4-cvc.webp); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 #img-c2 {
@@ -306,9 +307,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 30vh;
-    background-image: url(Assets/Images/CiviCare/5-cvc.webp); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 .group3{
@@ -333,19 +333,18 @@ video::-webkit-media-controls {
 
 #img-c3{
     grid-column: span 4; 
-    background-image: url(Assets/Images/CiviCare/1-cvc.webp);
+    width: 100%;
     height: 50vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 #img-c4 {
     position: relative; 
     width: 100%; 
     height: 45vh;
-    background-image: url('Assets/Images/CiviCare/2-cvc.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
@@ -358,18 +357,18 @@ video::-webkit-media-controls {
 
 #img-c5{
     grid-column: span 4;
-    background-image: url(Assets/Images/CiviCare/3-cvc.webp);
+    width: 100%;
     height: 70vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 #img-c6 {
     grid-column: span 4;
-    background-image: url(Assets/Images/CiviCare/6-cvc.webp);
+    width: 100%;
     height: 60vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 /*FINE civicare*/
@@ -381,9 +380,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 30vh;
-    background-image: url(Assets/Images/Undeclared/8.webp); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 #img-u2 {
@@ -391,44 +389,42 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 30vh;
-    background-image: url(Assets/Images/Undeclared/4.webp); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
 #img-u3{
     grid-column: span 4; 
-    background-image: url(Assets/Images/Undeclared/2.webp);
+    width: 100%;
     height: 70vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 #img-u4 {
     position: relative; 
     width: 100%; 
     height: 45vh;
-    background-image: url('Assets/Images/Undeclared/3.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
 #img-u5{
     grid-column: span 4;
-    background-image: url(Assets/Images/Undeclared/6.webp);
+    width: 100%;
     height: 70vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 #img-u6 {
     grid-column: span 6;
-    background-image: url(Assets/Images/Undeclared/5.webp);
+    width: 100%;
     height: 60vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 /* fine undeclared*/
@@ -438,10 +434,10 @@ video::-webkit-media-controls {
 
 #img-m1{
     grid-column: span 2; 
-    background-image: url(Assets/Images/MPT/1-mpt.webp);
+    width: 100%;
     height: 35vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 #img-m2 {
@@ -449,9 +445,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 80vh;
-    background-image: url('Assets/Images/MPT/2-mpt.webp');
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 #img-m3 {
@@ -459,9 +454,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 80vh;
-    background-image: url('Assets/Images/MPT/3-mpt.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
@@ -485,43 +479,52 @@ video::-webkit-media-controls {
     position: relative; 
     width: 100%; 
     height: 30vh;
-    background-image: url(Assets/Images/MPT/4-mpt.webp); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
 #img-o1{
     grid-column: span 2; 
-    background-image: url(Assets/Images/Omissis/omissis1.webp);
     height: 40vh;
-    background-position: center;
-    background-size: 180%;
+    overflow: hidden;
+}
+
+#img-o1 img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transform: scale(1.8);
 }
 
 #img-o2 {
     grid-column: span 4; 
     height: 50vh;
-    background-image: url('Assets/Images/Omissis/omissis2.webp');
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
     z-index: 2; 
+}
+#img-o2 img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 #img-o3 {
     grid-column: span 5; 
+    width: 100%;
     height: 80vh;
-    background-image: url('Assets/Images/Omissis/omissis3.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
 #img-uv1{
     grid-column: span 4; 
-    background-image: url(Assets/Images/Unverse/6.webp);
+    width: 100%;
     height: 40vh;
-    background-position: 26% center;
-    background-size: cover;
+    object-position: 26% center;
+    object-fit: cover;
 }
 
 #group-uv1 { 
@@ -534,9 +537,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 100%; 
     height: 50vh;
-    background-image: url('Assets/Images/Unverse/1.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
@@ -552,10 +554,14 @@ video::-webkit-media-controls {
 
 #img-uv3{
     grid-column: span 4;
-    background-image: url(Assets/Images/Unverse/5.webp);
     height: 70vh;
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
+}
+#img-uv3 img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 #group-uv2{
@@ -592,9 +598,8 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 55vh;
-    background-image: url('Assets/Images/Unverse/4.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 #img-uv5 {
@@ -602,18 +607,17 @@ video::-webkit-media-controls {
     position: relative; 
     width: 47%; 
     height: 55vh;
-    background-image: url('Assets/Images/Unverse/3.webp'); 
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
     z-index: 2; 
 }
 
 #img-uv6 {
     grid-column: span 5;
-    background-image: url(Assets/Images/Unverse/2.webp);
+    width: 100%;
     height: 60vh;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 #rights{
@@ -763,7 +767,3 @@ video::-webkit-media-controls {
     }
 
 }
-
-
-
-    
