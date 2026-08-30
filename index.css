@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'SuisseIntl';
     src: url('Assets/Fonts/SuisseIntl-SemiBold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 100 900;
     font-style: normal;
 }
 
@@ -321,7 +321,7 @@ video::-webkit-media-controls {
     margin-bottom: 10px;
 }
 
-#rectangle3 {
+.rectangle3 {
     position: absolute;
     top: 0; 
     left: 0;
@@ -626,7 +626,7 @@ video::-webkit-media-controls {
 
     #testo { grid-column: 3 / 13; }
 
-    .group3, #group-uv2, .rectangle-uv2, #rectangle3{
+    .group3, #group-uv2, .rectangle-uv2, .rectangle3{
         height: 120vh; 
     }
 
@@ -721,7 +721,7 @@ video::-webkit-media-controls {
         height: 40vh;
     }
 
-    .rectangle2, .rectangle-uv2, .group3, #rectangle3{
+    .rectangle2, .rectangle-uv2, .group3, .rectangle3{
         height: 50vh;
         margin: 0px;
     }
