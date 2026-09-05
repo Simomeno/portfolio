@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simomeno-freestyle</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" href="Assets/Images/favicon/favicon.ico" sizes="any">
+
+    <!-- Schede browser -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/Images/favicon/favicon-16x16.png">
+
+    <!-- Google  -->
+    <link rel="icon" type="image/png" sizes="48x48" href="Assets/Images/favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Assets/Images/favicon/android-chrome-192x192.png">
+
+    <!--  Safari  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/Images/favicon/apple-touch-icon.png">
+
+</head>
+<body>
+ 
+    <!--           
+    <div class="griglia">
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+    </div>
+    -->
+    
+ 
+    <div id="navbar">
+            <a class="n1" href="index.html"><p>Simomeno</p></a>
+            <p class="n2">Milan, Italy</p>
+            <p class="n3" id="orologio"></p>
+            <a class="n4" href="Assets/Images/MENONI_CV.pdf" target="_blank"><p>CV</p></a>
+            <a class="n5" href="Assets/Images/Menoni.pdf" target="_blank"><p>Portfolio</p></a>
+            <a class="n6" href="experiments.html"><p>Freestyle</p></a>
+            <!--<p class="n7">En/It</p>-->
+    </div>
+   
+    <div id="box-fr">
+        <video id="freestyle-1" src="Assets/Images/Freestyle/copenaghen.mp4" autoplay muted loop playsinline></video>
+        <video id="freestyle-2" src="Assets/Images/Freestyle/vinyl.MP4" autoplay muted loop playsinline></video>
+        <video id="freestyle-3" src="Assets/Images/Freestyle/linee.mp4" autoplay muted loop playsinline></video>
+        <video id="freestyle-4" src="Assets/Images/Freestyle/grignani.MP4" autoplay muted loop playsinline></video>
+        <img id="freestyle-5" src="" alt="">
+
+
+
+    </div>
+ 
+ 
+ 
+ 
+ 
+    
+ 
+<p id="rights">© 2026 - All Rights Reserved</p>
+            
+</body>
+</html>
+
+<script>
+    function aggiornaOrologio() {
+      // Recupera la data e l'ora attuali
+      const oraAttuale = new Date();
+      
+      // Estrae ore, minuti e secondi, aggiungendo uno '0' iniziale se il numero è minore di 10
+      const ore = String(oraAttuale.getHours()).padStart(2, '0');
+      const minuti = String(oraAttuale.getMinutes()).padStart(2, '0');
+      const secondi = String(oraAttuale.getSeconds()).padStart(2, '0');
+      
+      // Unisce i valori nel formato HH:MM:SS
+      const tempoFormattato = `${ore}:${minuti}:${secondi} IT`;
+      
+      // Inserisce il testo aggiornato nel paragrafo
+      document.getElementById("orologio").textContent = tempoFormattato;
+    }
+  
+    // Esegue la funzione subito per mostrare l'orario senza aspettare un secondo
+    aggiornaOrologio();
+    
+    // Imposta un timer che ripete la funzione ogni 1000 millisecondi (1 secondo)
+    setInterval(aggiornaOrologio, 1000);
+</script>
+
+
