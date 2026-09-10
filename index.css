@@ -665,7 +665,7 @@ video::-webkit-media-controls {
 }
 
 #freestyle-5{
-    grid-column: span 5;
+    grid-column: span 4;
     width: 100%;
     height: auto;
 }
