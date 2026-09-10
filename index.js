@@ -21,22 +21,33 @@ function aggiornaOrologio() {
   setInterval(aggiornaOrologio, 1000);
 
 
-
+// Tendina progetti
   
-const trigger = document.getElementById("more");
-const tenda = document.getElementById("find-more1");
+// Prendi TUTTI i bottoni "Find more"
+const triggers = document.querySelectorAll(".more-btn");
 
-trigger.addEventListener("click", function() {
-    if (tenda.classList.contains("aperto")) {
-        // chiusura
-        tenda.style.maxHeight = tenda.scrollHeight + "px"; // fissa altezza attuale
-        requestAnimationFrame(() => {
-            tenda.style.maxHeight = "0px";
-        });
-        tenda.classList.remove("aperto");
-    } else {
-        // apertura
-        tenda.style.maxHeight = tenda.scrollHeight + "px";
-        tenda.classList.add("aperto");
-    }
+// Per ogni bottone trovato, fai questo:
+triggers.forEach(trigger => {
+    trigger.addEventListener("click", function() {
+        
+        // Cerca la "scatola" grande del progetto che ho appena cliccato
+        const projectContainer = this.closest(".p1");
+        
+        // Cerca la tendina SOLO dentro questa scatola
+        const tenda = projectContainer.querySelector(".find-more-content");
+
+        // Se la tendina è già aperta, chiudila
+        if (tenda.classList.contains("aperto")) {
+            tenda.style.maxHeight = tenda.scrollHeight + "px"; 
+            requestAnimationFrame(() => {
+                tenda.style.maxHeight = "0px";
+            });
+            tenda.classList.remove("aperto");
+            
+        // Altrimenti, aprila
+        } else {
+            tenda.style.maxHeight = tenda.scrollHeight + "px";
+            tenda.classList.add("aperto");
+        }
+    });
 });
