@@ -19,3 +19,24 @@ function aggiornaOrologio() {
   
   // Imposta un timer che ripete la funzione ogni 1000 millisecondi (1 secondo)
   setInterval(aggiornaOrologio, 1000);
+
+
+
+  
+const trigger = document.getElementById("more");
+const tenda = document.getElementById("find-more1");
+
+trigger.addEventListener("click", function() {
+    if (tenda.classList.contains("aperto")) {
+        // chiusura
+        tenda.style.maxHeight = tenda.scrollHeight + "px"; // fissa altezza attuale
+        requestAnimationFrame(() => {
+            tenda.style.maxHeight = "0px";
+        });
+        tenda.classList.remove("aperto");
+    } else {
+        // apertura
+        tenda.style.maxHeight = tenda.scrollHeight + "px";
+        tenda.classList.add("aperto");
+    }
+});
