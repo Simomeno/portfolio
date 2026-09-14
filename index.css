@@ -923,6 +923,11 @@ video::-webkit-media-controls {
         aspect-ratio: 1 / 0.8;
     }
 
+    .find-more-content .tendina-content {
+        padding-top: 20px;    
+        padding-bottom: 20px;
+    }
+
     /*FREESTYLE*/
     
     #freestyle-1, #freestyle-2, #freestyle-3, #freestyle-4, #freestyle-5 {
