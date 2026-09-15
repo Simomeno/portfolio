@@ -25,7 +25,7 @@ img {
 @font-face {
     font-family: 'SuisseIntl';
     src: url('Assets/Fonts/SuisseIntl-SemiBold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -36,8 +36,11 @@ body{
     flex-direction: column;
     margin: 0 0;
     font-family: 'SuisseIntl', Arial, sans-serif;
+    font-weight: 600;
     padding: 0px 10px;
     background-color: white;
+    /*GESTIONE BUG FONT*/
+    -webkit-text-size-adjust: 100%;
 }
 
 a{
@@ -54,6 +57,11 @@ a{
 #sidebar{
     display: flex;
     flex-direction: column;
+}
+
+.n1, .n2, .n3, .n4, .n5, .n6{
+    white-space: nowrap;
+
 }
 
 .n2{
@@ -822,6 +830,7 @@ video::-webkit-media-controls {
 
     .n2, .n1, .n3{
         grid-column: 1 / span 3; 
+        
     }
 
     .n4, .n5, .n6{
