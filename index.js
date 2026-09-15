@@ -1,42 +1,34 @@
+//ORARIO
+
 function aggiornaOrologio() {
     // Recupera la data e l'ora attuali
     const oraAttuale = new Date();
     
-    // Estrae ore, minuti e secondi, aggiungendo uno '0' iniziale se il numero è minore di 10
     const ore = String(oraAttuale.getHours()).padStart(2, '0');
     const minuti = String(oraAttuale.getMinutes()).padStart(2, '0');
     const secondi = String(oraAttuale.getSeconds()).padStart(2, '0');
     
-    // Unisce i valori nel formato HH:MM:SS
     const tempoFormattato = `${ore}:${minuti}:${secondi} IT`;
     
-    // Inserisce il testo aggiornato nel paragrafo
     document.getElementById("orologio").textContent = tempoFormattato;
   }
 
-  // Esegue la funzione subito per mostrare l'orario senza aspettare un secondo
   aggiornaOrologio();
   
-  // Imposta un timer che ripete la funzione ogni 1000 millisecondi (1 secondo)
   setInterval(aggiornaOrologio, 1000);
 
 
 // Tendina progetti
   
-// Prendi TUTTI i bottoni "Find more"
 const triggers = document.querySelectorAll(".more-btn");
 
-// Per ogni bottone trovato, fai questo:
 triggers.forEach(trigger => {
     trigger.addEventListener("click", function() {
         
-        // Cerca la "scatola" grande del progetto che ho appena cliccato
         const projectContainer = this.closest(".p1");
         
-        // Cerca la tendina SOLO dentro questa scatola
         const tenda = projectContainer.querySelector(".find-more-content");
 
-        // Se la tendina è già aperta, chiudila
         if (tenda.classList.contains("aperto")) {
             tenda.style.maxHeight = tenda.scrollHeight + "px"; 
             requestAnimationFrame(() => {
@@ -44,10 +36,48 @@ triggers.forEach(trigger => {
             });
             tenda.classList.remove("aperto");
             
-        // Altrimenti, aprila
         } else {
             tenda.style.maxHeight = tenda.scrollHeight + "px";
             tenda.classList.add("aperto");
+        }
+    });
+});
+
+//GESTIONE SCROLL
+
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Blocca salto 
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            // Posizioni di partenza e arrivo
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const startPosition = window.scrollY;
+            const distance = targetPosition - startPosition;
+            
+            const duration = 1500; 
+            let start = null;
+
+            //Ease-in-out
+            window.requestAnimationFrame(function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                
+                // Calcolo fluido dell'animazione
+                const percentage = Math.min(progress / duration, 1);
+                const ease = percentage < 0.5 
+                    ? 2 * percentage * percentage 
+                    : -1 + (4 - 2 * percentage) * percentage;
+                
+                window.scrollTo(0, startPosition + distance * ease);
+                
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            });
         }
     });
 });

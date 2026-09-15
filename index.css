@@ -1,3 +1,4 @@
+
 img {
     display: block;
 }
@@ -951,6 +952,7 @@ video::-webkit-media-controls {
     .text-fm, .group-team, .group-type{
         grid-column: 1 / -1;
     }
+
 
     .text-fm, .roles2{
         margin-bottom: 30px;
