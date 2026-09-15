@@ -3,6 +3,12 @@ img {
     display: block;
 }
 
+/*a:hover{
+    color: #999999;
+    transition: 0.1s;
+}
+*/
+
 .griglia {
     position: fixed;
     top: 0;          
