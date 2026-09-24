@@ -65,7 +65,7 @@ a{
     flex-direction: column;
 }
 
-.n1, .n2, .n3, .n4, .n5, .n6{
+.n1, .n2, .n3, .n4, .n5, .n6, .group-type{
     white-space: nowrap;
 
 }
@@ -744,10 +744,7 @@ video::-webkit-media-controls {
     margin-bottom: 30px;
 }
 
-.group-type{
-    grid-column: 11;
 
-}
 
 @media (max-width: 1024px) {
     h2 { font-size: 26px; }
@@ -967,6 +964,7 @@ video::-webkit-media-controls {
     .text-fm, .group-team, .group-type{
         grid-column: 1 / -1;
     }
+
 
 
     .text-fm, .roles2{
