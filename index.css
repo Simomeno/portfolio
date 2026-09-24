@@ -31,7 +31,7 @@ img {
 @font-face {
     font-family: 'SuisseIntl';
     src: url('Assets/Fonts/SuisseIntl-SemiBold.ttf') format('truetype');
-    font-weight: 600;
+    font-weight: 100 900;
     font-style: normal;
 }
 
@@ -975,6 +975,8 @@ video::-webkit-media-controls {
         padding-top: 10px;    
         padding-bottom: 10px;
     }
+
+    
 
    
 
