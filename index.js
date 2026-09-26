@@ -1,7 +1,7 @@
 //ORARIO
 
 function aggiornaOrologio() {
-    // Recupera la data e l'ora attuali
+    
     const oraAttuale = new Date();
     
     const ore = String(oraAttuale.getHours()).padStart(2, '0');
