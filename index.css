@@ -937,8 +937,8 @@ video::-webkit-media-controls {
     }
 
     .find-more-content .tendina-content {
-        padding-top: 20px;    
-        padding-bottom: 20px;
+        padding-top: 10px;    
+        padding-bottom: 10px;
     }
 
     /*FREESTYLE*/
@@ -968,7 +968,7 @@ video::-webkit-media-controls {
 
 
     .text-fm, .roles2{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     #find-more1 .tendina-content{
@@ -977,7 +977,14 @@ video::-webkit-media-controls {
     }
 
     
+    .location{
+        margin-top: 20px; /*nuovo*/
 
+    }
+
+    .names{
+        margin-bottom: 20px; /*nuovo*/
+    }
    
 
     }
